@@ -1,5 +1,7 @@
 package br.com.trie.buscape;
 
+import java.util.Collection;
+
 import org.junit.Test;
 
 import junit.framework.TestCase;
@@ -10,7 +12,7 @@ public class TrieTest extends TestCase {
 
 	@Override
 	protected void setUp() throws Exception {
-		trie = new Trie();
+		trie = new Trie('a', 26);
 
 		trie.insert("by");
 		trie.insert("sea");
@@ -48,5 +50,4 @@ public class TrieTest extends TestCase {
 		assertTrue(trie.startsWith("t"));
 		assertTrue(trie.startsWith("she"));
 	}
-
 }

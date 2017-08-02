@@ -3,8 +3,8 @@ public class TrieNode {
 	private TrieNode[] arr;
 	private boolean leaf;
 
-	public TrieNode() {
-		this.arr = new TrieNode[26];
+	public TrieNode(int alphabetSize) {
+		this.arr = new TrieNode[alphabetSize];
 	}
 
 	public TrieNode[] getArr() {
